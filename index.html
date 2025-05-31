@@ -1,31 +1,106 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Lens</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-900">
+
+    <section class="text-center py-20 px-4">
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+        Urban stories<br />
+        <span class="underline underline-offset-4 decoration-black">through the lens</span>
+      </h1>
+      <p class="text-gray-600 mb-6">
+        Capturing the unseen rhythms of the city.
+      </p>
+      <button class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-2 rounded-full transition">
+        Discover my Journey
+      </button>
+    </section>
+
+    
+  </body>
+</html> -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hero Section</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body class="bg-primary font-sans">
-  <nav class="flex justify-end gap-4 p-4 font-medium">
-    <a href="#">Works</a>
-    <a href="#">Blog</a>
-    <a href="#">Contact</a>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tailwind Container Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-white shadow py-6">
+      <div class="container mx-auto px-4">
+        <h1 class="text-2xl font-bold">container test</h1>
+      </div>
+    </header>
+    <main class="py-12">
+      <div class="container mx-auto px-4">
+        <div class="bg-white rounded shadow p-6">
+          <h2 class="text-xl font-semibold mb-4">Main Content</h2>
+          <p class="text-gray-700">
+            This content is inside a container. It should be centered and not span the full width on large screens.
+          </p>
+        </div>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="columns-4 ...">
+          <img class="aspect-3/2 ..." src="./assets/avatar.png" />
+          <img class="aspect-square ..." src="./assets/mountain.avif" />
+          <img class="aspect-square ..." src="./assets/mountain.avif" />
+          <img class="aspect-square ..." src="./assets/mountain.avif" />
+        </div>
+      </div>
+    
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col gap-4">
+          <div class="bg-red-500 p-4">01</div>
+          <div class="bg-blue-500 p-4">02</div>
+          <div class="bg-yellow-500 p-4">03</div>
+        </div>
+        <div class="flex">
+          <div class="w-14 flex-none bg-green-500 p-4">01 10%</div>
+          <div class="w-64 flex-[3] bg-purple-500 p-4">02 55%</div>
+          <div class="w-32 flex-[2] bg-red-500 p-4">03 45%</div>
+        </div>
 
-  <section class="flex mx-auto mt-[80px] mb-[71px] max-w-6xl">
-    <div class="mr-20">
-      <h1 class="font-bold text-[44px] leading-[60px] text-[#21243D] mb-10">Hi, I am John,
-        <br>
-        Creative Technologist
-        </br>
-      </h1>
-      <p class="text-[16px] text-[#21243D]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-      <button class="bg-[#FF6464] text-white text-[20px] px-5 py-2 rounded-xs mt-[38px]">Download Resume</button>
-    </div>
-    <div class="">
-      <img src="./assets/avatar.png" alt="avatar profile" class="rounded-[50%] w-[243px] h-[243px] object-cover mx-auto">
-    </div>
-  </section>
-</body>
+        <div class="flex flex-wrap">
+          <div class=" bg-green-500 p-4">01 10%</div>
+          <div class=" bg-purple-500 p-4">02 55%</div>
+          <div class=" bg-red-500 p-4">03 45%</div>
+          <div class=" bg-green-500 p-4">01 10%</div>
+          <div class=" bg-purple-500 p-4">02 55%</div>
+          <div class=" bg-red-500 p-4">03 45%</div>
+          <div class=" bg-green-500 p-4">01 10%</div>
+          <div class=" bg-purple-500 p-4">02 55%</div>
+          <div class=" bg-red-500 p-4">03 45%</div>
+          <div class=" bg-green-500 p-4">01 10%</div>
+          <div class=" bg-purple-500 p-4">02 55%</div>
+          <div class=" bg-red-500 p-4">03 45%</div>
+        </div>
+      </div>
+
+      <!-- grid test study case -->
+       <div class="container mx-auto px-4">
+          <div class="grid grid-cols-3 gap-4">
+            <img src="./assets/building.png" alt="building" class="h-[400] w-auto object-cover">
+            <img src="./assets/mountain.avif" alt="mountain" class="h-[400] w-auto object-cover">
+            <div class="grid gap-4">
+              <img src="./assets/building.png" alt="building" class="h-[200] w-full object-cover">
+              <img src="./assets/mountain.avif" alt="mountain" class="h-[200] w-full object-cover">
+            </div>
+          </div>
+       </div>
+    </main>
+
+    <footer class="bg-white shadow py-6 mt-12">
+      <div class="container mx-auto px-4 text-center text-sm text-gray-500">
+        &copy; 2025 Tailwind Container Example
+      </div>
+    </footer>
+  
+  </body>
 </html>
