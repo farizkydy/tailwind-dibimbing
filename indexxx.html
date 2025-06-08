@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masonry Photo Grid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black p-4">
+    <div class="container mx-auto max-w-6xl">
+        <div class="grid grid-cols-12 grid-rows-12 gap-2 h-screen">
+            
+            <!-- Top Row -->
+            <!-- Large escalator image (left) -->
+            <div class="col-span-9 row-span-6 bg-gray-900 overflow-hidden relative">
+                <img src="./assets/img-1.png" alt="London Nights" class="w-full h-full object-cover">
+                <div class="absolute bottom-3 left-3 text-white text-sm font-light">London Nights</div>
+            </div>
+            
+            <!-- Yellow shoes image (top right) -->
+            <div class="col-span-3 row-span-6 bg-yellow-400 overflow-hidden">
+                <img src="./assets/img-2.png" alt="Yellow Building" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Middle Row Right -->
+            <!-- Red neon sign -->
+            <div class="col-span-3 row-span-3 bg-red-900 overflow-hidden relative">
+                <img src="./assets/img-3.png" alt="This Must Be the Place" class="w-full h-full object-cover">
+                <div class="absolute bottom-2 left-2 text-white text-xs">This Must Be<br>the Place</div>
+            </div>
+            
+            <!-- Large bridge image -->
+            <div class="col-span-9 row-span-7 bg-gray-300 overflow-hidden relative">
+                <img src="./assets/img-6.png" alt="Brick Building" class="w-full h-full object-cover">
+                <div class="absolute bottom-2 right-2 text-black text-xs">UK Architecture</div>
+            </div>
+
+            <!-- Bottom Left Section -->
+            <!-- Yellow street crossing -->
+            <div class="col-span-3 row-span-6 bg-yellow-300 overflow-hidden relative">
+                <img src="./assets/img-4.png" alt="Summer in Liverpool" class="w-full h-full object-cover">
+                <div class="absolute bottom-2 left-2 text-black text-xs">Summer in Liverpool</div>
+            </div>
+            
+            <!-- Brick building -->
+            <div class="col-span-3 row-span-2 bg-gray-700 overflow-hidden">
+                <img src="./assets/img-7.png" alt="Brick Building" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Bottom Right Section -->
+            <!-- People walking -->
+            <div class="col-span-3 row-span-2 bg-gray-600 overflow-hidden">
+                <img src="./assets/img-8.png" alt="People Walking" class="w-full h-full object-cover">
+            </div>
+            
+            <!-- Golden interior -->
+            <div class="col-span-3 row-span-4 bg-yellow-600 overflow-hidden">
+                <img src="./assets/img-9.png" alt="Shadows" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Bottom Row -->
+            <!-- City skyline -->
+            <div class="col-span-3 row-span-2 bg-gray-800 overflow-hidden">
+                <img src="./assets/img-5.png" alt="City Skyline" class="w-full h-full object-cover">
+            </div>
+            
+            <!-- Street scene -->
+            <div class="col-span-3 row-span-2 bg-gray-500 overflow-hidden">
+                <img src="./assets/img-10.png" alt="Street Scene" class="w-full h-full object-cover">
+            </div>
+   
+
+        </div>
+    </div>
+</body>
+</html>

@@ -29,10 +29,26 @@
   <head>
     <meta charset="UTF-8" />
     <title>Tailwind Container Test</title>
+    <link href="style.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#0d9488',
+            },
+            container: {
+              center: true,
+              padding: '2rem',
+            },
+          },
+        },
+      }
+    </script> -->
   </head>
   <body class="bg-gray-100">
-    <header class="bg-white shadow py-6">
+    <header class="bg-primary shadow py-6">
       <div class="container mx-auto px-4">
         <h1 class="text-2xl font-bold">container test</h1>
       </div>
@@ -93,7 +109,99 @@
               <img src="./assets/mountain.avif" alt="mountain" class="h-[200] w-full object-cover">
             </div>
           </div>
+
+          <div>-------</div>
+
+          <div class="flex gap-2 w-full mt-12">
+            <div class="flex-[2]">
+              <img src="./assets/img-1.png" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="flex-[1]">
+              <img src="./assets/img-2.png" alt="" class="w-full h-full object-cover">
+            </div>
+          </div>
+
+          <div class="flex gap-2 w-full mt-2">
+              <div class="flex-row gap-2 w-full flex-[1]">
+                <div class="flex-[1]">
+                  <img src="./assets/img-3.png" alt="" class="w-full h-auto object-cover">
+                </div>
+                <div class="flex-[1] mt-2">
+                  <img src="./assets/img-4.png" alt="" class="w-full h-auto object-cover">
+                </div>
+                <div class="flex-[1] mt-2">
+                  <img src="./assets/img-5.png" alt="" class="w-full h-auto object-cover">
+                </div>
+              </div>
+              <div class="flex-row  gap-2 w-full flex-[2]">
+                <div class="flex-[1]">
+                  <img src="./assets/img-6.png" alt="" class="w-full h-auto object-cover">
+                </div>
+                <div class="flex gap-2 w-full mt-2">
+                  <div class="flex-row gap-2 w-full flex-[1]">
+                    <div class="flex-[1]">
+                      <img src="./assets/img-7.png" alt="" class="w-full h-auto object-cover">
+                    </div>
+                    <div class="flex-[1] mt-2">
+                      <img src="./assets/img-8.png" alt="" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div class="flex-row gap-2 w-full flex-[1]">
+                    <div class="flex-[1]">
+                      <img src="./assets/img-9.png" alt="" class="w-full h-auto object-cover">
+                    </div>
+                    <div class="flex-[1] mt-2">
+                      <img src="./assets/img-10.png" alt="" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div>---------------- CODE FARIZ</div>
+          <div class="grid grid-cols-3 gap-2 w-full mt-12">
+            <!-- Top Row -->
+            <div class="col-span-2">
+              <img src="./assets/img-1.png" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="col-span-1">
+              <img src="./assets/img-2.png" alt="" class="w-full h-full object-cover">
+            </div>
+          </div>
+            <!-- bottom row -->
+          <div class="grid grid-cols-3 gap-2 w-full mt-2">
+            <!-- seperate into 2 col -->
+            <div class="col-span-1 gap-2">
+              <img src="./assets/img-3.png" alt="" class="w-full object-cover">
+              <img src="./assets/img-4.png" alt="" class="w-full object-cover">
+              <img src="./assets/img-5.png" alt="" class="w-full object-cover">
+            </div>
+          
+            <div class="col-span-2 gap-2">
+              <!-- have own col -->
+              <div class="col-span-2">
+                <img src="./assets/img-6.png" alt="" class="w-full object-cover">
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <div class="col-span-1 gap-2">
+                  <img src="./assets/img-7.png" alt="" class="w-full gap-2 object-cover">
+                  <img src="./assets/img-8.png" alt="" class="w-full gap-2 object-cover">
+                </div>
+                <div class="col-span-1 gap-2">
+                  <img src="./assets/img-9.png" alt="" class="w-full gap-2 object-cover">
+                  <img src="./assets/img-10.png" alt="" class="w-full gap-2 object-cover">
+                </div>
+              </div>
+              
+            </div>
+          
+          </div>
+          
        </div>
+
+       <div>----------------------</div>
+       <div class="custom">test</div>
+      
     </main>
 
     <footer class="bg-white shadow py-6 mt-12">
